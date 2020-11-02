@@ -65,3 +65,10 @@ and Adaptive Boosting (AdaBoost).
 5.<b> Tensor Flow Application Image Extraction</b><br>
    train results - 98.34%<br>
    test results - 98.04%<br>
+
+<h3><b>Conclusion</b></h3><br>
+This project aims to lower the communication gap between blind, deaf or mute community and normal world, help them to lead a standard lifestyle. The design
+prototype is used to convert text/ image to voice for blind, speech to text conversion for deaf and conversion of hand gestures to text for dumb people.I have
+presented the sketch and archetype model for unsighted, deafened & mute people (or integrated even as for visually impaired).
+The advantage of this is that it can be easily carried due to less weight. The functionality developed can be used as a smart assistant for differently abled people
+to communicate with others and it is a language independent system.
