@@ -54,7 +54,7 @@ and Adaptive Boosting (AdaBoost).
   train results - 100%<br>
   test results - 99.892%<br>
 
-3. <b>SGD Classifier</b><br>
+3.<b>SGD Classifier</b><br>
   train results - 72.01%<br>
   test results - 73.14%<br>
   
