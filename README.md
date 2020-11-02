@@ -40,3 +40,28 @@ Text to Speech using Camera is performed by a source called Optical Character Re
 image and perform background color and disturbances causing in the image. Thus after the final and successful recognition of the text from image it produces a sound
 speech using the gTTS module. The libraries used are Pytesseract, pyttsx3, Python Imaging Library(PIL) and Googletrans.<br>
 
+<h4><b>Hand Gesture Recognition</b></h4><br>
+Existing methodology of finger tracking and outline perception for gesture sign recognition using OpenCV. Gestures play a vital role for exchange information among
+the human beings. Hand gesture & sign recognition executes ample enough with the help of Machine learning methods such as neural networks, support vector machine,
+and Adaptive Boosting (AdaBoost).
+
+<h3><b>Results</b></h3><br>
+<b>1. Decision Tree</b> <br>
+ train results - 95.43%<br>
+ test results - 93.03%<br>
+
+2.<b>Random Forest</b><br>
+  train results - 100%<br>
+  test results - 99.892%<br>
+
+3. <b>SGD Classifier</b><br>
+  train results - 72.01%<br>
+  test results - 73.14%<br>
+  
+4.<b> Long Short Term Memory</b><br>
+  train results - 99.887%<br>
+  test results - 98.208%<br>
+
+5.<b> Tensor Flow Application Image Extraction</b><br>
+   train results - 98.34%<br>
+   test results - 98.04%<br>
