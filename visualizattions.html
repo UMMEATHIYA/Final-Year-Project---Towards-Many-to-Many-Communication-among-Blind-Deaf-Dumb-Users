@@ -1,0 +1,381 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+         <meta charset="UTF-8">
+        <link rel=styles.css>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        
+    <style>
+            body{
+                        background-color:rgb(241, 241, 238);
+                }
+            
+            h1{
+                        border: 5px solid rgb(56, 156, 218);
+                        background-color: lightskyblue;
+                        padding:20px;
+              }
+             .chart3{
+                width:43%;
+                height: 20%;
+                padding: 5px;
+                margin-left: 7%;
+              }
+             
+             p{
+                 margin-left: 10%;
+             }
+
+              .chart2{
+                width:43%;
+                height: 20%;
+                padding: 2px;
+                margin-left: 7%;
+              }
+              .column {
+                float: left;
+                width: 30.33%;
+                padding: 2px;
+                margin-left: 20px;
+                }
+
+/* Clear floats after image containers */
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+                }
+
+              .chart4{
+                width:47%;
+                height: 20%;
+                padding: 5px;
+                margin-left: 7%; 
+              }
+
+              .chart5{
+                width:47%;
+                height: 20%;
+                padding: 5px;
+                margin-left: 2%; 
+              } 
+
+              .chart6{
+                width:47%;
+                height: 20%;
+                padding: 5px;
+                margin-left: 2%; 
+              } 
+
+              .chart7{
+                width:48%;
+                height: 20%;
+                padding: 5px;
+                margin-left: 2%; 
+              } 
+
+            .one{
+                position: absolute;
+                top: 39%;
+                right: 0%;
+            }
+            .two{
+                position: absolute;
+                top: 100%;
+                right: 1%;
+                width: 55%;
+            }
+            .three{
+                position: absolute;
+                top: 170%;
+                right: 1%;
+                width: 55%;
+            }
+
+             .four{
+                position: absolute;
+                top: 269%;
+                right: 1%;
+                width: 53%;
+            }
+
+            .five{
+                position: absolute;
+                top: 340%;
+                right: 1%;
+                width: 53%;
+            }
+
+            .six{
+                position: absolute;
+                top: 420%;
+                right: 1%;
+                width: 53%;
+            }
+            .btn-primary2{
+                background-color: ForestGreen;
+            }
+
+    </style>
+</head>
+<body bgcolor="lightGray">
+<h1 align="center">Data Visualizations</h1>
+
+<div class="chart3">
+        <canvas id="myChart3"></canvas>
+        <h4 align="center">CDC Burden of Vision Loss  <button class="btn btn-primary2" onclick="updateChart3()">Update</button></h2>
+        </div>
+        <div class="one">
+        <p> <b>Source:</b> National Eye Institute, Prevent Blindness America.<br><b> Vision Problem in the US:</b> Prevalence of Adult Vision Impairment & Age Related Eye Disease.</p>
+        </div>
+<hr>
+       <div class="chart2">
+        <canvas id="myChart2"></canvas>
+        <h4 align="center"> Age-specific prevalence rates for blindness by Age and Race/Ethnicity <button class="btn btn-primary2" onclick="updateChart2()">Update</button></h2>
+        </div>
+        <div class="two">
+        <p> <b>Blindness</b> as defined by the <b>U.S.</b> definition is the best-corrected visual acuity of 6/60 or worse (=20/200) in the better-seeing eye.<br><b>Blindness</b> is defined by<b> U.S.</b> definition 20/200 best-corrected visual acuity in the better-seeing eye and the World Health Organization standard of 20/400.</p>
+       </div> 
+       <hr>
+       <div class="chart4">
+        <canvas id="myChart4"></canvas>
+        <h4 align="center">Diabetic Retinopathy in Diabetic Food <button class="btn btn-primary2" onclick="updateChart4()">  Update</button></h2>
+        </div>
+        <div class="three">
+        <p><b>NPDR</b> stands for <b>Non Proliferative Diabetic Retinopathy</b><br><b>Diabetic Retinopathy</b> in <b>Grade 2</b> VS <b>Grade 3 </b> </p>
+        </div> 
+    <hr>
+        <!-- <div class="Diabetic">
+        <img src="static/img/dia.gif"/>
+        <h4 align="center">Eye Processing in Diabetic Retinopathy</h4>
+        </div> -->
+    <div class="row">
+     <div class="column">
+    <img src="static/img/dia1.jpg" style="width:100%">
+    </div>
+    <div class="column">
+    <img src="static/img/dia.gif" style="width:100%">
+    </div>
+    <div class="column">
+    <img src="static/img/dia2.jpg" style="width:100%">
+    </div>
+    </div>
+    <h4 align="center">Eye Processing in Diabetic Retinopathy</h4>
+        <hr>
+    
+     <div class="chart5">
+        <canvas id="myChart5"></canvas>
+        <h4 align="center">Comparing Google's AI Speech Recognition to Human Captioning for Television News <button class="btn btn-primary2" onclick="updateChart5()">  Update</button></h2>
+        </div>
+        <div class="four">
+        <p><ul>The graph compares the <b>average number of seconds per entity</b> across the seven stations between the <b>automated transcripts</b> and <b>the station-provided captioning</b>.</ul> <br><ul><b> Human captioning</b> is created by a human transcriptionist rather than a computer program.</ul><br><ul><b>Closed captioning</b> displays the audio portion of a television program as text on the TV screen, providing a critical link to news, entertainment and information for individuals who are deaf or hard-of-hearing.</ul></p>
+        </div> 
+    <hr>
+
+     <div class="chart6">
+        <canvas id="myChart6"></canvas>
+        <h4 align="center">Fine Grained Statistical Structure of Speech <button class="btn btn-primary2" onclick="updateChart6()">  Update</button></h2>
+        </div>
+        <div class="five">
+        <p><ul><b>Relationship between the parameter β and acoustic features.</b></ul><br><ul>We inferred the main <b>acoustic factors</b> that affect the <b>β parameter</b> based on the distribution of β values at the level of phonemes.</ul><br><ul>In <b>2002</b>,<b>Lewicki</b> examined whether the spectral tilt—the natural decrease of <b>power spectrum density</b> could explain the power law satisfied by the quality factor.</ul><br><ul>In <b>2013</b>,<b>Stilp and Lewicki</b> listed three others acoustic factors that could affect the value of <b>β: harmonicity, acoustic transience and bandwidths</b>.</ul></p>
+        </div> 
+    <hr>
+
+      <div class="chart7">
+        <canvas id="myChart7"></canvas>
+        <h4 align="center">Sign Language Recognition using One hand and Two Hand<button class="btn btn-primary2" onclick="updateChart7()">  Update</button></h2>
+        </div>
+        <div class="six">
+        <p><ul>The Model Accuracy is obtained by training the Model using <b>Convolutional Neural Networks(CNN)</b></ul>.<br><ul>The model uses static images to train and classify, it takes <b>28X28</b> image contains <b>784 pixels</b> each represented by a grayscale value ranging from <b>0 (black)</b> to <b>1 (white)</b>.</ul><br><ul>By converting each image to a series of numbers, we transform the data into a format the computer can read.</ul></p>
+        </div> 
+    <hr>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+      <script>
+       var ctx = document.getElementById('myChart3').getContext('2d');
+        var chart3 = new Chart(ctx, {  
+    // The type of chart we want to create
+          type: 'bar',
+
+    // The data for our dataset
+          data: {
+                labels: ['Whites', 'Blacks', 'Hispanic','Other'],
+                datasets: [{
+                        label: 'Adult Vision Impaiment VS Age[60-70 above] & [80-90]',
+                        barPercentage: 5,
+                        barThickness: 10,
+                        maxBarThickness: 10,
+                        minBarLength: 0.5,
+                        backgroundColor: ['Crimson ','#F64B7C','#EA8069','lightskyblue'],
+                        borderColor: 'rgb(0, 99, 132)',
+                        data: [0.27,0.46,0.18,0.28]
+                    },
+                  ]
+                },
+
+    // Configuration options go here
+    options: {}
+});
+
+function updateChart3(){
+      chart3.data.datasets[0].data=[0.62,0.74,0.22,0.39]
+      chart3.update();
+    }  
+
+ var ctx = document.getElementById('myChart2').getContext('2d');
+        var chart2 = new Chart(ctx, {  
+    // The type of chart we want to create
+          type: 'polarArea',
+
+    // The data for our dataset
+          data: {
+                labels: ['All','Whites','Blacks','Hispanic','Others'],
+                datasets: [{
+                        label: 'Special Education for all Vision Impaired',
+                        backgroundColor: ['PaleVioletRed','Maroon','DarkGreen','MidnightBlue','MediumOrchid'],
+                        borderColor: '#8D8741',
+                        data: [4000000,2500000,1000589,98051,67862]
+                    },
+                  ]
+                },
+
+    // Configuration options go here
+    options: {}
+});
+
+function updateChart2(){
+      chart2.data.datasets[0].data=[7000000,5555000,2155000,3988456,3221465]
+      chart2.update();
+    }
+
+     var ctx = document.getElementById('myChart4').getContext('2d');
+        var chart4 = new Chart(ctx, {  
+    // The type of chart we want to create
+          type: 'doughnut',
+
+    // The data for our dataset
+          data: {
+                labels: ['Mild NPDR','Moderate NPDR','Severe NPDR','PDR'],
+                datasets: [{
+                        label: 'Diabetic Retinopathy for Grade 2 VS Grade 3',
+                        barPercentage: 0.5,
+                        barThickness: 10,
+                        maxBarThickness: 10,
+                        minBarLength: 0.5,
+                        backgroundColor: ['#78244C  ','MidnightBlue','#C3073F','OrangeRed'],
+                        borderColor: 'rgb(0, 99, 132)',
+                        data: [11,11,3,3]
+                    },
+                  ]
+                },
+
+    // Configuration options go here
+    options: {}
+});
+
+function updateChart4(){
+      chart4.data.datasets[0].data=[14,22,17,14]
+      chart4.update();
+    }       
+  
+
+ var ctx = document.getElementById('myChart5').getContext('2d');
+        var chart5 = new Chart(ctx, {  
+    // The type of chart we want to create
+          type: 'radar',
+
+    // The data for our dataset
+          data: {
+                labels: ['KQED(PBS)', 'KNTV(NBC)','KGO(ABC)','CNN','KPIX(CBS)','MSNBC','Fox News'],
+                datasets: [{
+                        label: 'Speech to Text VS Closed Captioning',
+                        barPercentage: 5,
+                        barThickness: 10,
+                        maxBarThickness: 10,
+                        minBarLength: 0.5,
+                        backgroundColor: ['Maroon '],
+                        borderColor: 'salmon',
+                        data: [6.95,6.1,6.6,7.59,7.02,7.7,7.98]
+                    },
+                  ]
+                },
+
+    // Configuration options go here
+    options: {}
+});
+
+function updateChart5(){
+      chart5.data.datasets[0].data=[14.3,12.2,12.04,11.95,11.74,11.83,10.72]
+      chart5.update();
+    }  
+
+
+ var ctx = document.getElementById('myChart6').getContext('2d');
+        var chart6 = new Chart(ctx, {  
+    // The type of chart we want to create
+          type: 'line',
+
+    // The data for our dataset
+          data: {
+                labels: ['-∞','-40','-35','30','-25','-20','-15','-10'],
+                datasets: [{
+                        label: 'Full Speech VS Without Bursts - Attentuation(dB) VS β(beta)',
+                        barPercentage: 5,
+                        barThickness: 20,
+                        maxBarThickness: 10,
+                        minBarLength: 0.5,
+                        backgroundColor: ['Chocolate'],
+                        borderColor: 'SaddleBrown',
+                        data: [0.70,0.80,0.77,0.783,0.857,0.71,0.743,0.63]
+                    },
+                  ]
+                },
+
+    // Configuration options go here
+    options: {}
+});
+
+function updateChart6(){
+      chart6.data.datasets[0].data=[0.87,0.85,0.838,0.94,0.71,0.74,0.60,0.63]
+      chart6.update();
+    }  
+
+
+  var ctx = document.getElementById('myChart7').getContext('2d');
+        var chart7 = new Chart(ctx, {  
+    // The type of chart we want to create
+          type: 'line',
+
+    // The data for our dataset
+          data: {
+                labels: ['0.55','0.60','0.65','0.70','0.75','0.80','0.85','0.90','0.95'],
+                datasets: [{
+                        label: 'Model Accuracy-Classification Accuracy VS Count',
+                        barPercentage: 5,
+                        barThickness: 20,
+                        maxBarThickness: 10,
+                        minBarLength: 0.5,
+                        backgroundColor: ['DarkGreen'],
+                        borderColor: 'Tan',
+                        data: [4.5,9.3,5.7,21.3,17.1,19.7,14.7,7.7,4.6]
+                    },
+                  ]
+                },
+
+    // Configuration options go here
+    options: {}
+});
+
+function updateChart7(){
+      chart7.data.datasets[0].data=[1.2,3.7,2.1,23.8,15.7,28.3,20.0,4.7,3.2]
+      chart7.update();
+    }  
+    </script>    
+
+
+
+
+
+
+<body>
+</html>
