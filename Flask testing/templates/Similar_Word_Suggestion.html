@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel=styles.css>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+        <style>
+          body{
+                        background-color:rgb(241, 241, 238);
+                }
+          .image2{
+                        position: absolute;
+                        top: 120px;
+                        left: 5px;
+                }
+         h1{
+                        border: 5px solid rgb(56, 156, 218);
+                        background-color: lightskyblue;
+                        padding:20px;
+                }
+                .form-group{
+                        width:35%;
+                        margin: 10px auto;
+                        padding:20px;
+                }
+                 button[type=submit] {
+                color: white;
+                text-align: center;
+                margin: 30px;
+                display: block;
+                margin-left: 45%;
+                width: 10%;
+                }
+               
+                label{
+                    font-family: bold;
+                }
+
+                table {
+                        font-family: arial, sans-serif;
+                        border-collapse: collapse;
+                        width: 35%;
+                        margin: 10px auto;
+                        padding:20px;
+                        border: 3px solid black;
+                }
+
+                td, th {
+                        border: 1px solid black;
+                        text-align: left;
+                        padding: 8px;
+                        border: 1px solid black;
+                }
+
+                tr:nth-child(even) {
+                        background-color: #dbb4da;
+                }
+                tr:nth-child(odd) {
+                        background-color: #e1a9c2;
+                }
+                .align{
+                    text-align:center;
+                }
+                label{
+                    font-weight: bold;
+                }
+</style>
+</head>
+<body bgcolor="lightGray">
+<h1 align="center">Similar Word Suggestion</h1>
+    <form action="/similar_words" enctype="multipart/form-data" method="post"  accept-charset="UTF-8">
+        <div class="form-group">
+                <label for="Text">Text</label>
+                <input name="text" type="text" class="form-control" id="text"  placeholder="Enter text">
+                 <label for="Lang">Language</label>
+                <input name="lang" type="text" class="form-control" id="text"  placeholder="Enter language">      
+       </div>
+       
+        
+<button type="submit" class="btn btn-primary">Submit</button>
+<div class="align">
+<h4>{{new}}<h4>
+</div>
+
+    <br>
+    <table>
+  <tr>
+    <th>SL NO.</th>
+    <th>Code</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>en_AG</td>
+    <td>Antigua & Barbuda</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>en_AU</td>
+    <td>Australian</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>en_BS</td>
+    <td>Bahamas</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>en_BW</td>
+    <td>Botswana</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>en_BZ</td>
+    <td>Belize</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>en_CA</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>en_DK</td>
+    <td>Denmark</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>en_GB</td>
+    <td>British English</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>en_GH</td>
+    <td>Ghana</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>en_HK</td>
+    <td>Hong Kong</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>en_IE</td>
+    <td>Ireland</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>en-IN</td>
+    <td>India</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>en-JM</td>
+    <td>Jamaica</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>en_NA</td>
+    <td>Namibia</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>en_NG</td>
+    <td>Nigeria</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>en_NZ</td>
+    <td>New Zealand</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>en_PH</td>
+    <td>Philippines</td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>en_SG</td>
+    <td>Singapore</td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>en_TT</td>
+    <td>Trinidad & Tobago</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>en_US</td>
+    <td>United States</td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>en_ZA</td>
+    <td>South Africa</td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>en_ZW</td>
+    <td>Zimbabwe</td>
+  </tr>
+</table>
+   
+    </form>
+    <div class="image2">
+        <img src = "static/img/sim2.gif"/>
+   </div>
+   <!-- <div class="align">
+<h2>{{new}}<h2>
+</div> -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

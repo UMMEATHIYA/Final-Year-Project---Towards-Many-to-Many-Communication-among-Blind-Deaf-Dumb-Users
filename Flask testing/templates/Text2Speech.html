@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel=styles.css>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+        <style>
+          body{
+                        background-color:rgb(241, 241, 238);
+                }
+         h1{
+                        border: 5px solid rgb(56, 156, 218);
+                        background-color: lightskyblue;
+                        padding:20px;
+                }
+                .form-group{
+                        width:35%;
+                        margin: 10px auto;
+                        padding:20px;
+                }
+                 button[type=submit] {
+                color: white;
+                text-align: center;
+                margin: 30px;
+                display: block;
+                margin-left: 45%;
+                width: 10%;
+                }
+               
+                label{
+                    font-family: bold;
+                }
+
+                table {
+                        font-family: arial, sans-serif;
+                        border-collapse: collapse;
+                        width: 35%;
+                        margin: 10px auto;
+                        padding:20px;
+                        border: 3px solid black;
+                }
+
+                td, th {
+                        border: 1px solid black;
+                        text-align: left;
+                        padding: 8px;
+                        border: 1px solid black;
+                }
+
+                tr:nth-child(even) {
+                        background-color: #dbb4da;
+                }
+                tr:nth-child(odd) {
+                        background-color: #e1a9c2;
+                }
+</style>
+</head>
+<body bgcolor="lightGray">
+<h1 align="center">Text to Speech Conversion</h1>
+    <form action="/tts" enctype="multipart/form-data" method="post"  accept-charset="UTF-8">
+        <div class="form-group">
+                <label for="Text">Text</label>
+                <input name="text" type="text" class="form-control" id="text"  placeholder="Enter text">
+                 <label for="Lang">Language</label>
+                <input name="lang" type="text" class="form-control" id="text"  placeholder="Enter language">      
+       </div>
+       
+        
+<button type="submit" class="btn btn-primary">Submit</button>
+    <br><br>
+    <table>
+      <tr>
+        <th>SL NO.</th>
+        <th>Code</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>af</td>
+        <td>Africans</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>sq</td>
+        <td>Albanian</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>ar</td>
+        <td>Arabic</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>hy</td>
+        <td>Armenian</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>bn</td>
+        <td>Bengali</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>ca</td>
+        <td>Catalan</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>hr</td>
+        <td>Croatian</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>cs</td>
+        <td>Czech</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>da</td>
+        <td>Danish</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>nl</td>
+        <td>Dutch</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>en</td>
+        <td>English</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>en-uk</td>
+        <td>English(United Kingdom)</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>en-us</td>
+        <td>English(United States)</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>eo</td>
+        <td>Esperanto</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>fi</td>
+        <td>Finnish</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>fr</td>
+        <td>French</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>de</td>
+        <td>German</td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>el</td>
+        <td>Greek</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>hi</td>
+        <td>Hindi</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>hu</td>
+        <td>hungarian</td>
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>is</td>
+        <td>Icelandic</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>id</td>
+        <td>Indonesian</td>
+      </tr>
+      <tr>
+        <td>23</td>
+        <td>it</td>
+        <td>Italian</td>
+      </tr>
+    
+      <tr>
+        <td>24</td>
+        <td>ja</td>
+        <td>Japanese</td>
+      </tr>
+      <tr>
+        <td>25</td>
+        <td>km</td>
+        <td>Khmes</td>
+      </tr>
+      <tr>
+        <td>26</td>
+        <td>ko</td>
+        <td>Korean</td>
+      </tr>
+      <tr>
+        <td>27</td>
+        <td>la</td>
+        <td>Latin</td>
+      </tr>
+      <tr>
+        <td>28</td>
+        <td>lv</td>
+        <td>Latrian</td>
+      </tr>
+      <tr>
+        <td>29</td>
+        <td>mk</td>
+        <td>Macedonian</td>
+      </tr>
+      <tr>
+        <td>30</td>
+        <td>no</td>
+        <td>Norwegian</td>
+      </tr>
+      <tr>
+        <td>31</td>
+        <td>pl</td>
+        <td>polish</td>
+      </tr>
+      <tr>
+        <td>32</td>
+        <td>pt</td>
+        <td>Portugese</td>
+      </tr>
+      <tr>
+        <td>32</td>
+        <td>ro</td>
+        <td>Romania</td>
+      </tr>
+      <tr>
+        <td>33</td>
+        <td>ru</td>
+        <td>Russian</td>
+      </tr>
+      <tr>
+        <td>34</td>
+        <td>sr</td>
+        <td>Serbian</td>
+      </tr>
+    <tr>
+        <td>35</td>
+        <td>si</td>
+        <td>Sinhala</td>
+      </tr>
+    <tr>
+        <td>36</td>
+        <td>sk</td>
+        <td>Slovak</td>
+      </tr>
+    <tr>
+        <td>37</td>
+        <td>sw</td>
+        <td>Swahili</td>
+      </tr>
+    <tr>
+        <td>38</td>
+        <td>sv</td>
+        <td>Swedish</td>
+      </tr>
+    <tr>
+        <td>39</td>
+        <td>ta</td>
+        <td>Tamil</td>
+      </tr>
+    <tr>
+        <td>40</td>
+        <td>th</td>
+        <td>Thai</td>
+      </tr>
+    <tr>
+        <td>41</td>
+        <td>tr</td>
+        <td>Turkish</td>
+      </tr>
+    <tr>
+        <td>42</td>
+        <td>uk</td>
+        <td>Ukrainian</td>
+      </tr>
+    <tr>
+        <td>43</td>
+        <td>vi</td>
+        <td>Vietnamese</td>
+      </tr>
+    <tr>
+        <td>44</td>
+        <td>cy</td>
+        <td>Welsh</td>
+      </tr>
+    
+    
+    </table>
+   
+    </form>
+   
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

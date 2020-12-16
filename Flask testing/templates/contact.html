@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+    <style>
+    body{
+          background-image: url('static/img/beauty.jpg');
+          background-repeat: no-repeat;
+          background-size: 1250px 1500px;
+          
+        }
+
+
+        .column1 {
+  float: left;
+  width: 22%;
+  margin-bottom: 5px;
+  padding: 0 8px;
+  margin-top: 5px;
+  margin-left: 440px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column1 {
+    width: 50%;
+    display: block;
+  }
+}
+
+img{
+    margin-left: 85px;
+}
+
+/* Add some shadows to create a card effect */
+.card1 {
+  box-shadow: 0 4px 8px 0 white;
+}
+
+/* Some left and right padding inside the container */
+.container1 {
+  padding: 0 8px 0px;
+  color:white;
+}
+
+/* Clear floats */
+.container1::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: white;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+        .column {
+  float: left;
+  width: 22%;
+  margin-bottom: 5px;
+  padding: 0 8px;
+  margin-top: 5px;
+  margin-left: 80px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 50%;
+    display: block;
+  }
+}
+
+img{
+    margin-left: 85px;
+}
+p
+{
+  margin:0;
+  padding:2px;
+
+}
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 white;
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 8px 0px;
+  color:white;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: white;
+}
+h2{
+    margin:0;
+    padding: 2px;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+h1{
+    color:white;
+    margin:2px;
+    padding: 2px;
+}
+    </style>
+</head>
+<body>
+<h1 align="center">Meet The Team</h1>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="static/img/aishwarya.jpeg" style="width:35%">
+      <div class="container">
+        <h2>Aishwarya R</h2>
+        <p class="title">1DB16IS001</p>
+        <p>r.aishwaryyaa@gmail.com</p>
+        <p>Department of ISE</p>
+        <p>Don Bosco Institute of Technology</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="static/img/aswathi.jpeg" style="width:35%">
+      <div class="container">
+        <h2>Aswathi Rajesh</h2>
+        <p class="title">1DB16IS007</p>
+        <p>aswathirajesh2604@gmail.com</p>
+        <p>Department of ISE</p>
+        <p>Don Bosco Institute of Technology</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="static/img/athiya.jpg" style="width:35%">
+      <div class="container">
+        <h2>Umme Athiya</h2>
+        <p class="title">1DB16IS051</p>
+        <p>athiya.naseem@gmail.com</p>
+        <p>Department of ISE</p>
+        <p>Don Bosco Institute of Technology</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+    <h1 align="center">Project Guide</h1>
+
+    <div class="row1">
+  <div class="column1">
+    <div class="card1">
+      <img src="static/img/chaithra.jpeg" style="width:35%">
+      <div class="container">
+        <h2>Mrs. Chaithra A S</h2>
+        <p class="title">Assistant Professor</p>
+        <p>aschaithra@gmail.com</p>
+        <p>Department of ISE</p>
+        <p>Don Bosco Institute of Technology</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</HTML>

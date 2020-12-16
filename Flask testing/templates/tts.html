@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CONVERTED AUDIO</title>
+        <style>
+        
+                .chart3{
+                width:63%;
+                height: 40%;
+                padding: 10px;
+                margin-left: 20%;
+              }
+
+               .gfg { 
+                width:auto; 
+                text-align:center; 
+                padding:5px; 
+            } 
+            img { 
+                width: 50%; 
+                height: 70%; 
+                object-fit: contain; 
+            } 
+
+              .chart2{
+                width:55%;
+                height: 40%;
+                padding: 10px;
+                margin-left: 25%;
+              }
+
+
+              .chart4{
+                width:63%;
+                height: 40%;
+                padding: 10px;
+                margin-left: 20%; 
+              }
+
+              .chart5{
+                width:63%;
+                height: 20%;
+                padding: 10px;
+                margin-left: 20%; 
+              } 
+
+                .pred{
+                        width: 35%;
+                        padding: 20px;
+                        border: 2px solid black;
+                        margin-left: 30px;
+                        position: absolute;
+                        /* right: 300px; */
+                        top:140px;
+}
+
+                .center{
+                text-align: center;
+                font-weight:bolder;
+                border: 5px solid rgb(56, 156, 218);
+                background-color: lightskyblue;
+                padding:20px;
+                margin-top:0px;
+              }
+            .cen{
+                  font-family: bold;
+                  text-align:center;
+                  font-size: 24px;
+              }
+          body{
+                        background-color:rgb(241, 241, 238);
+                }
+         .center{
+                        border: 5px solid rgb(56, 156, 218);
+                        background-color: lightskyblue;
+                        padding:10px;
+                        margin-top:0px;
+                        text-align:center;
+                }
+                 .gfg1 { 
+                /* width:auto; 
+                text-align:center;
+                position: relative;
+                top: 0px;
+                padding:30px;
+                height: 20px;
+                right: -106px;  */
+                width: 500px;
+                margin-top:0px;
+                height: 230px;
+                margin-left: 45%
+            } 
+            .gfg { 
+                width:auto; 
+                text-align:center; 
+                padding:20px; 
+            } 
+        </style>
+        </head>
+    <body>
+        <h1 class="center">
+            Text to Speech Conversion<br>
+            </h1>
+            <p> Your text is successfully converted to speech</p>
+            <p> Your mp3 file is been downloaded</p>
+
+        <audio>
+   <source src="/static", filename="tts1.mp3">   
+</audio>
+            {{n}}
+        </h1>
+        <div class="gfg1">
+          <img src="https://techwiser.com/wp-content/uploads/2016/06/Make-your-computer-read-out-text.gif" width="200" height="200" margin-left: 45%>
+        </div>
+        <br>
+<hr>
+        
+          <h1 align="center">Data Visualization Report</h1>
+         <div class="chart3">
+        <canvas id="myChart3"></canvas>
+        <h2 align="center">WaveNet: A generative model for raw audio{ US English VS Mandrian Chinese}<button class="btn btn-primary2" onclick="updateChart3()">Update</button></h2>
+       </div> 
+       <hr>
+       <div class="chart2">
+        <canvas id="myChart2"></canvas>
+        <h2 align="center">Graph showing transcription accuracy by speaking rate <button class="btn btn-primary1" onclick="updateChart2()">Update</button></h2>
+       </div> 
+       <hr>
+       <div class="chart4">
+        <canvas id="myChart4"></canvas>
+        <h2 align="center">Cloud Text to Speech expands its number of voices<button class="btn btn-primary2" onclick="updateChart4()">Update</button></h2>
+       </div> 
+    
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+      <script>
+       var ctx = document.getElementById('myChart3').getContext('2d');
+        var chart3 = new Chart(ctx, {  
+    // The type of chart we want to create
+          type: 'bar',
+
+    // The data for our dataset
+          data: {
+                labels: ['concatenative ', 'Parametric', 'WaveNet','Human Speech'],
+                datasets: [{
+                        label: 'US English VS Mandrian Chinese',
+                        barPercentage: 5,
+                        barThickness: 10,
+                        maxBarThickness: 10,
+                        minBarLength: 0.5,
+                        backgroundColor: ['#66CCDF ','#F64B7C','#EA8069','lightskyblue'],
+                        borderColor: 'rgb(0, 99, 132)',
+                        data: [3.86,3.67,4.21,4.55]
+                    },
+                  ]
+                },
+
+    // Configuration options go here
+    options: {}
+});
+
+function updateChart3(){
+      chart3.data.datasets[0].data=[3.47,3.79,4.08,4.21]
+      chart3.update();
+    }  
+
+ var ctx = document.getElementById('myChart2').getContext('2d');
+        var chart2 = new Chart(ctx, {  
+    // The type of chart we want to create
+          type: 'line',
+
+    // The data for our dataset
+          data: {
+                labels: ['Disliked Most','Never Used','Not Sure','Frequently Used','Occasionally Used','Maximum Ratings'],
+                datasets: [{
+                        label: 'Line graph showing transcription accuracy by speaking rate',
+                        backgroundColor: ['#DAAD86'],
+                        borderColor: '#8D8741',
+                        data: [73,105,142,166,189,200]
+                    },
+                  ]
+                },
+
+    // Configuration options go here
+    options: {}
+});
+
+function updateChart2(){
+      chart2.data.datasets[0].data=[30,43,38,52,31,89]
+      chart2.update();
+    }
+
+     var ctx = document.getElementById('myChart4').getContext('2d');
+        var chart4 = new Chart(ctx, {  
+    // The type of chart we want to create
+          type: 'bar',
+
+    // The data for our dataset
+          data: {
+                labels: ['Cloud Text to Speech', 'Azure Speech Service', 'Amazon Poly'],
+                datasets: [{
+                        label: 'Total Voices(Standard + Neural net-powered) vs Total Languages/ variants with neural net powered voices',
+                        barPercentage: 0.5,
+                        barThickness: 10,
+                        maxBarThickness: 10,
+                        minBarLength: 0.5,
+                        backgroundColor: ['#78244C  ','#907163','#C3073F'],
+                        borderColor: 'rgb(0, 99, 132)',
+                        data: [187,81,58]
+                    },
+                  ]
+                },
+
+    // Configuration options go here
+    options: {}
+});
+
+function updateChart4(){
+      chart4.data.datasets[0].data=[32,4,2]
+      chart4.update();
+    }       
+    </script>    
+
+          <hr>
+
+          <div class="gfg">
+          <img src="https://cdn-backlinko.pressidium.com/wp-content/uploads/2018/08/chapter-2-text-vs-speech-searches-1.png" width="500" height="300">
+          </div>
+          <h3 class="cen">Comparative analysis of Text vs Speech</h3>
+
+    </body>
+</html>
